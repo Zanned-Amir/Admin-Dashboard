@@ -1,0 +1,14 @@
+.grid-temp{
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr) 2fr;
+    grid-template-rows: repeat(8, 1fr) ;
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+}
+.section{
+    border: 1px solid black;
+    grid-column: span 2;
+    grid-row: span 2;
+}

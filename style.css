@@ -4,15 +4,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: auto; /* Change this to auto to allow both horizontal and vertical scrolling */
+    width: 100vw;
+    height: 1300px;
+    overflow: auto; 
 }
 .left-container{
     background-color: #0284c7;
     height: 100vh;
     width: 300px;
     display: flex;
+    padding-right: 50px;
     justify-content: left;
     flex-direction: column;
     position: sticky;
@@ -65,21 +66,22 @@ a{
 }
 
 .right-container{
-    width: 1600px;
-    height: 100vh;
+    width: 100%;
+    height: 1300px;
     display: flex;
+    flex-grow: 1;
     background-color: #e2e8f0;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    overflow-y: auto;
+
 }
 .right-container .header
 {
     background-color: white;
     padding-top: 40px;
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -108,32 +110,35 @@ a{
 }
 .right-container .header img{
     border-radius: 30px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin-left:80px ;
 }
 .right-container .header input
 {
     width:700px;
-    height: 40px;
+    height: 35px;
     background-color: #e2e8f0;
     border-radius: 20px;
     border: none;
     font-size: 20px;
     font-weight: bold;
     padding-left: 10px;
+    color:#64748b;
 }
+
 .right-container .header svg,
-.right-container .header img,
 .right-container .header input {
     margin-left: 30px;
 }
 .right-container .header #id-1{
-    margin-left: 300px ;
+    margin-left: 200px ;
 }
 .right-container .header #id-2{
     font-size: 20px;
-    margin-left: 70px;
+    margin-left: 30px;
     font-weight: bold;
+
 }
 .right-container .nav #img{
     margin-left: 70px;
@@ -144,6 +149,7 @@ a{
 .right-container .nav #id-3{
     font-size: 20px;
     margin-left: 30px;
+    font-weight: bold;
 }
 .right-container .nav #id-4{
     font-size: 30px;
@@ -161,10 +167,150 @@ a{
     color: white;
     font-weight: 900;
     font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .right-container .nav #btn-1{
-    margin-left: 600px  ;
+    margin-left: 500px  ;
+}
+.right-container .display {
+    width: 100%;
+    height: 1000px;
+    display: flex;
 }
 
+.right-container .display .left {
+    width: 75%;
+    height: 1000px;
+    box-sizing: border-box;
+}
+.right-container .display .right {
+    width: 25%;
+    height: 1000px; 
+    border: none;
+}
+.right-container .display .right .aside-1 {
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: 15px;
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.right-container .display .right .aside-2 {
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: 15px;
+    width: 300px;
+    height:380px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px; 
+}
+.right-container .display .left .top-text {
+    margin-top: 25px;
+    margin-left:25px ;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.right-container .display  .left-grid {
+    width: 100%;
+    height: 1000px;
+ grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,300px);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    display: grid;
+   
+}
+.right-container .display .left-grid .m{
+    background-color: white;
+    margin: 20px;
+    border-radius:20px ;
+}
+
+.bond{
+    background-color: #eab308;
+    height: 100%;
+    width: 20px;
+    border-radius: 10px  0px 0px 10px ;
+}
+.m {
+    position: relative; 
+}
+
+.m .option {
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+    display: flex;
+    flex-direction: space-between;
+    align-items: flex-end; 
+    justify-content: flex-end; 
+}
+
+.option svg{
+    fill: black;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+h3 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+h2{
+    margin-left: 20px;
+}
+.aside-1 hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    color: #e2e8f0;
+    background-color: #e2e8f0;
+    height: 1px;
+    width: 80%;
+}
+
+#texto{
+    font-size: 15px;
+}
+.p{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.photo{
+    margin-top: 30px;
+    display: flex;
+    
+}
+.name-p{
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 15px;
+}
+.texto-1{
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 20px;
+}
  
