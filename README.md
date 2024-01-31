@@ -1,6 +1,9 @@
 ## Admin_dashboard
 This project was concentrated on creating a simple admin dashboard using the skill learned through previous lessons 
+
 [photo](assets/dashboard-project.png)
+
+
 ## Features
 1. Flexbox
 2. CSS Grid
